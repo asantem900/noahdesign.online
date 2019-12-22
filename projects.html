@@ -10,6 +10,7 @@
   <title>NOAH | Pioneering Design and Revolution</title>
   <link rel="icon" type="image/x-icon" href="img/logo_favicon.ico">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap">
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -47,7 +48,7 @@
     but hey, it's pure CSS magic.
     -->
             <ul id="menu">
-              <li class="current"><a href="projects.html">PROJECTS</a></li>
+              <li><a href="projects.html">PROJECTS</a></li>
               <li><a href="about.html">
                   ABOUT</a></li>
               <li><a href="contact.html">
@@ -61,25 +62,34 @@
     </div>
   </header>
 
-  <section id="showcase">
-    <h1>Yer</h1>
-    <p>yo</p>
-  </section>
+  <div class="container">
+    <main id="swup" class="transition-fade">
+      <h1>Pioneering Design For the Future</h1>
+    </main>
+  </div>
 
   <footer class="footer">
     <div class="container">
-      <a href="#" class="company">AN ASANTÉ COMPANY</a>
+      <div class="company">AN<a href="#">ASANTÉ</a>COMPANY
+      </div>
       <div id="Copyright">
         NO ONE AT HOME DESIGN COMPANY 2019 &copy; ALL RIGHTS RESERVED.
       </div>
       <!-- Add font awesome icons -->
       <a href="#" class="fa fa-github"></a>
+      <a href="#" class="fa fa-dribbble"></a>
       <a href="#" class="fa fa-twitter"></a>
       <a href="#" class="fa fa-instagram"></a>
       <a href="#" class="fa fa-linkedin"></a>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+
+  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+
+  <script>
+    const swup = new Swup();
+  </script>
+
 </body>
 
 </html>
